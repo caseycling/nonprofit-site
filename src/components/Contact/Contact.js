@@ -68,9 +68,8 @@ class ContactPage extends React.Component {
           Contact us
         </h2>
         <p className='text-center w-responsive mx-auto pb-5'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error
-          amet numquam iure provident voluptate esse quasi, veritatis totam
-          voluptas nostrum quisquam eum porro a pariatur veniam.
+          Have any questions? Write us an email and we'll get back to you as
+          soon as possible!
         </p>
         <MDBRow className='mx-auto'>
           <MDBCol md='9' className='md-0 mb-5 '>

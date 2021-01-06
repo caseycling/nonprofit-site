@@ -20,10 +20,10 @@ const PhageJumbo = () => {
           height: '100%',
         }}
       >
-        <MDBCol className='py-5' md='6' style={{}}>
-          <h2 className='font-weight-bold'>
-            <span className='border-top border-dark'>P</span>hage
-          </h2>
+        <MDBCol className='py-5 px-5 mb-5 mb-md-0 mt-md-5' md='6' style={{}}>
+          <h1 className='font-weight-bold'>
+            <span className='border-top border-dark'>T</span>he Phage
+          </h1>
           <p className='font-weight-bold '>
             PREDATORS OF BACTERIA AND NATURAL MEDICINE AGAINST HOSPITAL ACQUIRED
             DISEASES
@@ -32,7 +32,7 @@ const PhageJumbo = () => {
         <MDBCol className='px-0 ' md='6'>
           <img
             src={phageJumboPic}
-            className='img-fluid w-100 h-100 border-top border-white'
+            className='img-fluid w-100 h-100 border-top border-dark'
             style={{ backgroundColor: 'black' }}
             alt=''
           />

@@ -2,6 +2,7 @@ import React from 'react';
 
 import { MDBJumbotron, MDBRow, MDBCol } from 'mdbreact';
 
+import phageCycle from '../../../images/phageCycle.jpg';
 import './styles.css';
 
 function HowTheyWork() {
@@ -11,9 +12,9 @@ function HowTheyWork() {
         <MDBRow>
           <MDBCol>
             <h2
-              className='white-text text-center font-weight-bold htw-banner py-4 my-0 border-top border-light'
+              className='black-text text-center font-weight-bold htw-banner py-4 my-0 border-top border-dark'
               style={{
-                backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)`,
+                backgroundColor: '#F5F5F5',
               }}
             >
               How They Work
@@ -21,14 +22,14 @@ function HowTheyWork() {
           </MDBCol>
         </MDBRow>
         <MDBRow
-          className='px-3 py-4 my-0 grey-text border-top border-light'
-          style={{ backgroundColor: 'black' }}
+          className='px-4 py-4 my-0 dark-text border-top border-dark'
+          style={{ backgroundColor: '#FFFFFF' }}
         >
-          <MDBCol>
-            <h2 className='py-3 border-bottom border-grey mb-4'>
+          <MDBCol md='5' className='pl-5 '>
+            <h4 className='py-3 border-bottom border-dark mb-4'>
               <span className='border-top border-white'>T</span>
               heraputic Applications
-            </h2>
+            </h4>
             <p>
               Phages’ infectious cycle begins with the specific recognition of
               receptors located on the surface of the bacteria. The phage then
@@ -47,6 +48,14 @@ function HowTheyWork() {
               virion. As soon as the cell is destroyed, the newly-created phages
               rapidly replicate the cycle as soon as they find new bacteria.
             </p>
+          </MDBCol>
+          <MDBCol className='mx-auto' md='6'>
+            <img
+              src={phageCycle}
+              className='img-fluid w-100 h-100 border-top border-white '
+              style={{ backgroundColor: '' }}
+              alt=''
+            />
           </MDBCol>
         </MDBRow>
       </MDBJumbotron>

@@ -1,27 +1,30 @@
 import React from 'react';
 import { MDBJumbotron, MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 
-// import silverGradient from '../../../images/silverGradient'
-import phageInfoPic from '../../../images/phageInfoPic.png';
+import phageDiagram from '../../../images/phageDiagram.png';
 
 import './styles.css';
 
 const PhageInfo = () => {
   return (
-    <MDBJumbotron fluid className='py-0 mb-0'>
+    <MDBJumbotron
+      fluid
+      className='py-0 mb-0 border-top border-dark'
+      style={{ backgroundColor: '#FFFFFF' }}
+    >
       <MDBRow>
-        <MDBCol className='mt-0 border-top border-white'>
+        <MDBCol sm='12' md='7' className='mt-0 pr-0 '>
           <h2
-            className='white-text text-center font-weight-bold what-banner cloudy-knoxville-gradient py-4 my-0 border-top border-white'
+            className='black-text text-center font-weight-bold what-banner  pt-4 pt-md-5 mt-3 my-0  '
             style={{
-              backgroundImage: `url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg)`,
+              backgroundColor: '#FFFFFF',
             }}
           >
             What is it?
           </h2>
           <p
-            className='border-top border-light pt-5 pb-3 px-3 mb-0 grey-text'
-            style={{ backgroundColor: 'black' }}
+            className='pt-4 pb-3 px-4 px-md-5 mx-md-5 mb-0 black-text '
+            style={{ backgroundColor: '#FFFFFF' }}
           >
             The phages are natural predator viruses that only infect bacteria.
             They do not infect eukaryotic cells, and are therefore harmless to
@@ -30,8 +33,8 @@ const PhageInfo = () => {
             biological species on Earth.{' '}
           </p>
           <p
-            className='px-3 my-0 pb-5 grey-text'
-            style={{ backgroundColor: 'black' }}
+            className='px-4 px-md-5 mx-md-5 my-0 pb-5 black-text'
+            style={{ backgroundColor: '#FFFFFF' }}
           >
             Phages have many qualities because they offer excellent efficacy
             against bacteria – including bacteria that are multi-resistant to
@@ -40,12 +43,10 @@ const PhageInfo = () => {
             microbiota, unlike antibiotics.
           </p>
         </MDBCol>
-      </MDBRow>
-      <MDBRow>
-        <MDBCol>
+        <MDBCol className='pl-0 my-3 mx-auto pb-4 pb-md-0' sm='12' md='5'>
           <img
-            src={phageInfoPic}
-            className='img-fluid mb-0 pb-0 w-100 border-top border-light'
+            src={phageDiagram}
+            className='img-fluid mb-0 pb-0 mx-auto w-100 h-100 border-left border-dark'
             alt=''
           />
         </MDBCol>
